@@ -1,0 +1,224 @@
+
+:root {
+  --color-bg: #282424;
+  --color-text-main: #ffffff; 
+  --color-primary: #AFECE0;
+  --wrapper-height: 85vh;
+  --image-max-width: 320px;
+  --font-family: "HK Grotesk";
+  --font-family-header: "HK Grotesk";
+}
+.hint-text {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  font-size: 12px;
+  color: white;
+}
+
+.social-links {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  display: flex;
+  gap: 10px;
+  z-index: 1000;
+}
+
+.social-links a {
+  display: flex;
+  align-items: center;
+}
+
+.social-links img {
+  width: 50px;
+  height: auto;
+}
+* {
+  box-sizing: border-box;
+}
+[hidden] {
+  display: none !important;
+}
+
+@font-face {
+  font-family: HK Grotesk;
+  src: url("https://cdn.glitch.me/605e2a51-d45f-4d87-a285-9410ad350515%2FHKGrotesk-Regular.otf?v=1603136326027")
+    format("opentype");
+}
+@font-face {
+  font-family: HK Grotesk;
+  font-weight: bold;
+  src: url("https://cdn.glitch.me/605e2a51-d45f-4d87-a285-9410ad350515%2FHKGrotesk-Bold.otf?v=1603136323437")
+    format("opentype");
+}
+
+.btn--remix {
+  font-family: HK Grotesk;
+  padding: 0.75rem 1rem;
+  font-size: 1.1rem;
+  line-height: 1rem;
+  font-weight: 500;
+  height: 2.75rem;
+  align-items: center;
+  cursor: pointer;
+  background: #FFFFFF;
+  border: 1px solid #ffffff; 
+  box-sizing: border-box;
+  border-radius: 4px;
+  text-decoration: none;
+  color: #ffffff; 
+  white-space: nowrap;
+  margin-left: auto;
+}
+.btn--remix img {
+  margin-right: 0.5rem;
+}
+.btn--remix:hover {
+  background-color: #D0FFF1;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem auto 0;
+  padding: 1rem 0 0.75rem 0;
+  width: 100%;
+  flex-wrap: wrap;
+  border-top: 4px solid #ffffff; 
+}
+
+.footer a:not(.btn--remix):link,
+a:not(.btn--remix):visited {
+  font-family: HK Grotesk;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.1rem;
+  color: #ffffff;
+  text-decoration: none;
+  border-style: none;
+}
+.footer a:hover {
+  background: var(--color-primary);
+}
+
+.footer .links {
+  padding: 0.5rem 1rem 1.5rem;
+  white-space: nowrap;
+}
+
+.divider {
+  padding: 0 1rem;
+}
+
+body {
+  font-family: HK Grotesk;
+  background-color: var(--color-bg);
+  color: #ffffff; 
+}
+.wrapper {
+  min-height: var(--wrapper-height);
+  display: grid;
+  place-items: center;
+  margin: 0 1rem;
+  min-height: 100vh;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+h1 {
+  color: #ffffff; 
+  font-family: HK Grotesk;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 100px;
+  line-height: 105%;
+}
+.page h1 {
+  font-size: 48px;
+}
+
+.page p {
+  line-height: 1.5;
+}
+
+.page a {
+  color: #ffffff;
+}
+
+.page a:hover {
+  text-decoration: none;
+}
+
+.btn--click-me {
+  user-select: none;
+  cursor: pointer;
+  white-space: nowrap;
+}
+.btn--click-me:hover {
+  text-decoration: underline;
+}
+.illustration {
+  max-width: 100%;
+  max-height: var(--image-max-width);
+  cursor: pointer;
+  padding-left: 3.5rem;
+}
+
+.instructions {
+  margin: 1rem auto 0;
+}
+.instructions p {
+  font-size: 1rem;
+}
+h2 {
+  color: #ffffff; 
+}
+.draw-cursor {
+  position: absolute;
+  width: 2px;
+  height: 2px;
+  background-color: #98b4eb;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  pointer-events: none; 
+  z-index: 9999; 
+}
+
+
+.sticky-footer {
+  background-color: #141212;
+  padding: 10px;
+  position: sticky;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  color: #ffffff; 
+}
+
+.project-container {
+  border-radius: 15px; 
+  overflow: hidden;
+}
+
+.project {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 20px;
+  padding: 20px;
+  background-color: #141212;
+}
+
+.project img {
+  margin-bottom: 10px;
+}
+
+.project div {
+  flex-grow: 1;
+}
+
